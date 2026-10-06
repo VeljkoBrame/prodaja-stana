@@ -11,7 +11,7 @@ window.OGLAS = {
 
   cena: 105000,
   valuta: "€",
-  napomenaCena: "Cena po dogovoru. Moguća kupovina putem kredita. U cenu su uračunati regal, plakari, kuhinjski elementi i dva klima uređaja.",
+  napomenaCena: "Cena po dogovoru. Moguća kupovina putem kredita. Stan se prodaje prazan.",
 
   // Kratke informacije ispod naslova
   osnovno: [
@@ -29,7 +29,7 @@ window.OGLAS = {
   opis: [
     "Prodaje se trosoban stan površine 80 m² na trećem spratu, plus terasa od 6 m² i podrum, u Jagodini, Slavke Đurđević B2.",
     "Stan je uknjižen, a kupovina je direktno od vlasnika, bez posrednika i provizije. Zgrada ima dva lifta i biciklanu. Stan ima novu PVC stolariju. Cena je 105.000 €, moguća je kupovina na kredit.",
-    "U cenu su uračunati regal od punog drveta u dnevnoj sobi, plakari u hodniku i spavaćoj sobi, kuhinjski elementi, kao i dva klima uređaja.",
+    "Stan se prodaje prazan — nameštaj i oprema sa fotografija nisu uključeni u cenu.",
   ],
 
   // Plan stana i kvadratura po prostorijama (m²)
@@ -58,10 +58,7 @@ window.OGLAS = {
     "Ostava",
     "Dva lifta u zgradi",
     "Biciklana u zgradi",
-    "Regal od punog drveta (ostaje)",
-    "Plakari u hodniku i spavaćoj sobi (ostaju)",
-    "Kuhinjski elementi (ostaju)",
-    "Dva klima uređaja (ostaju)",
+    "Prodaje se prazan",
     "Moguć kredit",
   ],
 
@@ -72,10 +69,10 @@ window.OGLAS = {
     { src: "slike/dnevna-soba.jpg", opis: "Trpezarija i dnevna soba" },
     { src: "slike/kuhinja.jpg", opis: "Kuhinja" },
     { src: "slike/spavaca-soba.jpg", opis: "Spavaća soba" },
-    { src: "slike/soba-plakar.jpg", opis: "Soba sa plakarom" },
+    { src: "slike/soba-plakar.jpg", opis: "Soba" },
     { src: "slike/soba-3.jpg", opis: "Soba" },
     { src: "slike/kupatilo.jpg", opis: "Kupatilo" },
-    { src: "slike/hodnik.jpg", opis: "Hodnik sa plakarom" },
+    { src: "slike/hodnik.jpg", opis: "Hodnik" },
     { src: "slike/terasa.jpg", opis: "Terasa" },
   ],
 
