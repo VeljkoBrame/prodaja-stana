@@ -5,9 +5,9 @@
 // ─────────────────────────────────────────────────────────────
 
 window.OGLAS = {
-  naslov: "Trosoban stan u strogom centru",
-  podnaslov: "80 m², 3. sprat, terasa i podrum — u najtraženijim B zgradama.",
-  adresa: "Strogi centar · B zgrade",
+  naslov: "Trosoban stan u Jagodini",
+  podnaslov: "80 m², 3. sprat, terasa i podrum — Slavke Đurđević B2.",
+  adresa: "Jagodina · Slavke Đurđević B2",
 
   cena: 105000,
   valuta: "€",
@@ -25,7 +25,7 @@ window.OGLAS = {
 
   // Svaki pasus je poseban string
   opis: [
-    "Prodaje se trosoban stan površine 80 m² na trećem spratu, plus terasa od 6 m² i podrum, u strogom centru, u najtraženijim B zgradama.",
+    "Prodaje se trosoban stan površine 80 m² na trećem spratu, plus terasa od 6 m² i podrum, u Jagodini, Slavke Đurđević B2.",
     "Stan ima novu PVC stolariju. Cena je 105.000 €, moguća je kupovina na kredit.",
   ],
 
@@ -47,8 +47,7 @@ window.OGLAS = {
   },
 
   karakteristike: [
-    "Strogi centar",
-    "B zgrade",
+    "Jagodina, Slavke Đurđević B2",
     "Terasa 6 m²",
     "Podrum",
     "Nova PVC stolarija",
@@ -60,17 +59,20 @@ window.OGLAS = {
   // Fotografije: { src: "slike/ime.jpg", opis: "Opis" } — prva je naslovna
   slike: [
     { src: "slike/dnevna-soba-2.jpg", opis: "Dnevna soba" },
+    { src: "slike/dnevna-soba-3.jpg", opis: "Dnevna soba – pogled ka trpezariji i kuhinji" },
     { src: "slike/dnevna-soba.jpg", opis: "Trpezarija i dnevna soba" },
     { src: "slike/kuhinja.jpg", opis: "Kuhinja" },
     { src: "slike/spavaca-soba.jpg", opis: "Spavaća soba" },
     { src: "slike/soba-plakar.jpg", opis: "Soba sa plakarom" },
     { src: "slike/soba-3.jpg", opis: "Soba" },
+    { src: "slike/kupatilo.jpg", opis: "Kupatilo" },
+    { src: "slike/hodnik.jpg", opis: "Hodnik sa plakarom" },
     { src: "slike/terasa.jpg", opis: "Terasa" },
   ],
 
   // Tekst koji se šalje Google mapi (adresa ili koordinate "44.80,20.47").
   // Ostavite prazno ("") da se sekcija Lokacija ne prikazuje.
-  mapa: "",
+  mapa: "Slavke Đurđević, Jagodina",
 
   kontakt: {
     ime: "",
