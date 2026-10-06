@@ -26,7 +26,7 @@ window.OGLAS = {
   // Svaki pasus je poseban string
   opis: [
     "Prodaje se trosoban stan površine 80 m² na trećem spratu, plus terasa od 6 m² i podrum, u Jagodini, Slavke Đurđević B2.",
-    "Stan ima novu PVC stolariju. Cena je 105.000 €, moguća je kupovina na kredit.",
+    "Zgrada ima dva lifta i biciklanu. Stan ima novu PVC stolariju. Cena je 105.000 €, moguća je kupovina na kredit.",
     "U cenu su uračunati regal od punog drveta u dnevnoj sobi, plakari u hodniku i spavaćoj sobi, kao i kuhinjski elementi.",
   ],
 
@@ -54,6 +54,8 @@ window.OGLAS = {
     "Nova PVC stolarija",
     "Kupatilo + zaseban mali WC",
     "Ostava",
+    "Dva lifta u zgradi",
+    "Biciklana u zgradi",
     "Regal od punog drveta (ostaje)",
     "Plakari u hodniku i spavaćoj sobi (ostaju)",
     "Kuhinjski elementi (ostaju)",
