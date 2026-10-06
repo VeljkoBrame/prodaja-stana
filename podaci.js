@@ -57,15 +57,15 @@ window.OGLAS = {
     "Moguć kredit",
   ],
 
-  // Demo fotografije (Unsplash) — zamenite svojim: { src: "slike/01.jpg", opis: "Dnevna soba" }
+  // Fotografije: { src: "slike/ime.jpg", opis: "Opis" } — prva je naslovna
   slike: [
-    { src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1800&q=80", opis: "Dnevna soba" },
-    { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&q=80", opis: "Dnevna soba – pogled ka terasi" },
-    { src: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1800&q=80", opis: "Kuhinja" },
-    { src: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1800&q=80", opis: "Spavaća soba" },
-    { src: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1800&q=80", opis: "Kupatilo" },
-    { src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&q=80", opis: "Trpezarija" },
-    { src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=80", opis: "Hodnik" },
+    { src: "slike/dnevna-soba-2.jpg", opis: "Dnevna soba" },
+    { src: "slike/dnevna-soba.jpg", opis: "Trpezarija i dnevna soba" },
+    { src: "slike/kuhinja.jpg", opis: "Kuhinja" },
+    { src: "slike/spavaca-soba.jpg", opis: "Spavaća soba" },
+    { src: "slike/soba-plakar.jpg", opis: "Soba sa plakarom" },
+    { src: "slike/soba-3.jpg", opis: "Soba" },
+    { src: "slike/terasa.jpg", opis: "Terasa" },
   ],
 
   // Tekst koji se šalje Google mapi (adresa ili koordinate "44.80,20.47").
