@@ -21,12 +21,14 @@ window.OGLAS = {
     { oznaka: "Terasa", vrednost: "6 m²" },
     { oznaka: "Podrum", vrednost: "Da" },
     { oznaka: "Stolarija", vrednost: "Nova PVC" },
+    { oznaka: "Uknjižen", vrednost: "Da" },
+    { oznaka: "Provizija", vrednost: "Bez provizije" },
   ],
 
   // Svaki pasus je poseban string
   opis: [
     "Prodaje se trosoban stan površine 80 m² na trećem spratu, plus terasa od 6 m² i podrum, u Jagodini, Slavke Đurđević B2.",
-    "Zgrada ima dva lifta i biciklanu. Stan ima novu PVC stolariju. Cena je 105.000 €, moguća je kupovina na kredit.",
+    "Stan je uknjižen, a kupovina je direktno od vlasnika, bez posrednika i provizije. Zgrada ima dva lifta i biciklanu. Stan ima novu PVC stolariju. Cena je 105.000 €, moguća je kupovina na kredit.",
     "U cenu su uračunati regal od punog drveta u dnevnoj sobi, plakari u hodniku i spavaćoj sobi, kao i kuhinjski elementi.",
   ],
 
@@ -82,7 +84,7 @@ window.OGLAS = {
 
   kontakt: {
     ime: "",
-    uloga: "",
+    uloga: "Direktno od vlasnika — bez posrednika i provizije",
     telefon: "+381 60 157 1107",
     email: "",
     viber: true,
