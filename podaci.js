@@ -5,29 +5,28 @@
 // ─────────────────────────────────────────────────────────────
 
 window.OGLAS = {
-  naslov: "Svetao trosoban stan na Vračaru",
-  podnaslov: "Mirna ulica, pet minuta od Hrama, potpuno renoviran 2024.",
-  adresa: "Njegoševa, Vračar, Beograd",
+  naslov: "Trosoban stan u strogom centru",
+  podnaslov: "80 m², 3. sprat, terasa i podrum — u najtraženijim B zgradama.",
+  adresa: "Strogi centar · B zgrade",
 
-  cena: 285000,
+  cena: 105000,
   valuta: "€",
-  napomenaCena: "Cena je fiksna. Moguća kupovina putem kredita.",
+  napomenaCena: "Cena po dogovoru. Moguća kupovina putem kredita.",
 
   // Kratke informacije ispod naslova
   osnovno: [
-    { oznaka: "Površina", vrednost: "78 m²" },
+    { oznaka: "Površina", vrednost: "80 m²" },
     { oznaka: "Sobe", vrednost: "3.0" },
-    { oznaka: "Sprat", vrednost: "3 / 5" },
-    { oznaka: "Izgradnja", vrednost: "1962." },
-    { oznaka: "Grejanje", vrednost: "Centralno" },
-    { oznaka: "Uknjižen", vrednost: "Da" },
+    { oznaka: "Sprat", vrednost: "3." },
+    { oznaka: "Terasa", vrednost: "6 m²" },
+    { oznaka: "Podrum", vrednost: "Da" },
+    { oznaka: "Stolarija", vrednost: "Nova PVC" },
   ],
 
   // Svaki pasus je poseban string
   opis: [
-    "Stan se nalazi na trećem spratu održavane zgrade sa liftom, u jednoj od najmirnijih ulica Vračara. Orijentisan je na istok i zapad, pa je svetao tokom celog dana.",
-    "Raspored: ulazni hodnik, prostrana dnevna soba sa izlazom na terasu, odvojena kuhinja sa trpezarijom, dve spavaće sobe, kupatilo i zaseban toalet. Sve sobe su odvojene.",
-    "Renoviranje 2024. je obuhvatilo instalacije (struja i vodovod), PVC stolariju, hrastov parket, kupatilo i kuhinju po meri. Stan je spreman za useljenje.",
+    "Prodaje se trosoban stan površine 80 m² na trećem spratu, plus terasa od 6 m² i podrum, u strogom centru, u najtraženijim B zgradama.",
+    "Stan ima novu PVC stolariju. Cena je 105.000 €, moguća je kupovina na kredit.",
   ],
 
   // Plan stana i kvadratura po prostorijama (m²)
@@ -48,16 +47,14 @@ window.OGLAS = {
   },
 
   karakteristike: [
+    "Strogi centar",
+    "B zgrade",
     "Terasa 6 m²",
-    "Lift",
-    "Podrum 4 m²",
-    "PVC stolarija",
-    "Klima u svakoj sobi",
-    "Interfon",
-    "Kablovska i optika",
-    "Blizu javnog prevoza",
-    "Škola i vrtić u blizini",
-    "Parking na ulici (zona)",
+    "Podrum",
+    "Nova PVC stolarija",
+    "Kupatilo + zaseban mali WC",
+    "Ostava",
+    "Moguć kredit",
   ],
 
   // Demo fotografije (Unsplash) — zamenite svojim: { src: "slike/01.jpg", opis: "Dnevna soba" }
@@ -71,16 +68,17 @@ window.OGLAS = {
     { src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800&q=80", opis: "Hodnik" },
   ],
 
-  // Tekst koji se šalje Google mapi (adresa ili koordinate "44.80,20.47")
-  mapa: "Njegoševa, Vračar, Beograd",
+  // Tekst koji se šalje Google mapi (adresa ili koordinate "44.80,20.47").
+  // Ostavite prazno ("") da se sekcija Lokacija ne prikazuje.
+  mapa: "",
 
   kontakt: {
-    ime: "Marko Petrović",
-    uloga: "Vlasnik — bez agencijske provizije",
-    telefon: "+381 60 000 0000",
-    email: "stan.vracar@example.com",
+    ime: "",
+    uloga: "",
+    telefon: "+381 60 157 1107",
+    email: "",
     viber: true,
     whatsapp: true,
-    napomena: "Razgledanje svakog dana od 17 do 20h, uz prethodni dogovor.",
+    napomena: "",
   },
 };

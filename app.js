@@ -23,7 +23,10 @@
     .join("");
   $("opis").innerHTML = d.opis.map((p) => `<p>${esc(p)}</p>`).join("");
   $("karakteristike").innerHTML = d.karakteristike.map((k) => `<li>${esc(k)}</li>`).join("");
-  $("mapa").src = `https://www.google.com/maps?q=${encodeURIComponent(d.mapa)}&z=15&output=embed`;
+  if (d.mapa) {
+    $("lokacija").hidden = false;
+    $("mapa").src = `https://www.google.com/maps?q=${encodeURIComponent(d.mapa)}&z=15&output=embed`;
+  }
 
   // Kontakt
   const k = d.kontakt;
