@@ -1,0 +1,8 @@
+{
+  "name": "trosoban-stan-na-prodaju",
+  "compatibility_date": "2026-10-01",
+  // Statički sajt; objavljuje se samo folder docs/
+  "assets": {
+    "directory": "./docs"
+  }
+}
