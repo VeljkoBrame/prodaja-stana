@@ -30,6 +30,23 @@ window.OGLAS = {
     "Renoviranje 2024. je obuhvatilo instalacije (struja i vodovod), PVC stolariju, hrastov parket, kupatilo i kuhinju po meri. Stan je spreman za useljenje.",
   ],
 
+  // Plan stana i kvadratura po prostorijama (m²)
+  plan: {
+    src: "slike/plan.webp",
+    prostorije: [
+      { naziv: "Dnevna soba", m2: 18.92 },
+      { naziv: "Trpezarija", m2: 15.47 },
+      { naziv: "Soba 2", m2: 13.15 },
+      { naziv: "Soba 3", m2: 12.85 },
+      { naziv: "Kuhinja", m2: 6.12 },
+      { naziv: "Hodnik sa plakarom", m2: 5.88 },
+      { naziv: "Kupatilo", m2: 4.62 },
+      { naziv: "Ostava", m2: 1.98 },
+      { naziv: "Mali WC", m2: 1.47 },
+      { naziv: "Terasa", m2: 6.12, spolja: true },
+    ],
+  },
+
   karakteristike: [
     "Terasa 6 m²",
     "Lift",

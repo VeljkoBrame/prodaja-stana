@@ -53,20 +53,41 @@
     (slike.length > 1 ? `<button class="mosaic__all" data-i="0">Sve fotografije (${slike.length})</button>` : "");
   $("galerija").innerHTML = slike.map(thumb).join("");
 
+  // Plan stana
+  const plan = d.plan;
+  if (plan && plan.src) {
+    $("raspored").hidden = false;
+    $("planImg").src = plan.src;
+    const m = (n) => `${n.toFixed(2).replace(".", ",")} m²`;
+    const unutra = (plan.prostorije || []).filter((p) => !p.spolja);
+    const spolja = (plan.prostorije || []).filter((p) => p.spolja);
+    const ukupno = unutra.reduce((s, p) => s + p.m2, 0);
+    const red = (p, cls) => `<tr${cls ? ` class="${cls}"` : ""}><td>${esc(p.naziv)}</td><td>${m(p.m2)}</td></tr>`;
+    $("prostorije").innerHTML = unutra.length
+      ? unutra.map((p) => red(p)).join("") +
+        spolja.map((p) => red(p, "muted")).join("") +
+        `<tr class="total"><td>Ukupno (unutra)</td><td>${m(ukupno)}</td></tr>`
+      : "";
+    $("planBtn").onclick = () => open(0, [{ src: plan.src, opis: "Plan stana" }]);
+  }
+
   // Lightbox
   const lb = $("lb");
+  let list = slike;
   let cur = 0;
   let lastFocus = null;
 
   function show(i) {
-    cur = (i + slike.length) % slike.length;
-    $("lbImg").src = slike[cur].src;
-    $("lbImg").alt = slike[cur].opis || "";
-    $("lbCap").textContent = slike[cur].opis || "";
-    $("lbCount").textContent = `${cur + 1} / ${slike.length}`;
-    new Image().src = slike[(cur + 1) % slike.length].src; // preload sledeće
+    cur = (i + list.length) % list.length;
+    $("lbImg").src = list[cur].src;
+    $("lbImg").alt = list[cur].opis || "";
+    $("lbCap").textContent = list[cur].opis || "";
+    $("lbCount").textContent = list.length > 1 ? `${cur + 1} / ${list.length}` : "";
+    $("lbPrev").hidden = $("lbNext").hidden = list.length < 2;
+    new Image().src = list[(cur + 1) % list.length].src; // preload sledeće
   }
-  function open(i) {
+  function open(i, items = slike) {
+    list = items;
     lastFocus = document.activeElement;
     show(i);
     lb.hidden = false;
